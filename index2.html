@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.H. | HAMDEOK POP</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 힙한 무드를 극대화하는 볼드한 타이포그래피 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Pretendard:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Pretendard', sans-serif; background-color: #FFFFFF; color: #000000; }
+        .font-pop { font-family: 'Syne', sans-serif; }
+        
+        /* 팝한 오렌지 스크롤바 */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0022FF; }
+        ::-webkit-scrollbar-thumb { background: #FF5500; }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#FF5500] selection:text-white overflow-x-hidden">
+
+    <!-- NAVIGATION: 볼드 스트라이프 & 원색 라인 -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white border-b-4 border-[#0022FF]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-pop text-3xl font-extrabold tracking-tighter text-[#0022FF] hover:text-[#FF5500] transition-colors">C.H.</a>
+            <nav class="hidden md:flex space-x-8 text-sm uppercase font-black tracking-wider text-black">
+                <a href="#about" class="hover:bg-[#0022FF] hover:text-white px-3 py-1 transition-all">About</a>
+                <a href="#menu" class="hover:bg-[#0022FF] hover:text-white px-3 py-1 transition-all">Menu</a>
+                <a href="#location" class="hover:bg-[#0022FF] hover:text-white px-3 py-1 transition-all">Location</a>
+            </nav>
+            <div class="text-sm font-black text-[#FF5500] tracking-widest font-pop animate-pulse">
+                HAMDEOK, JEJU
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION: 코발트 블루와 네온 오렌지 일러스트 그래픽 대비 -->
+    <main class="pt-20">
+        <section class="min-h-[calc(100vh-5rem)] w-full flex flex-col lg:flex-row items-stretch">
+            
+            <!-- 왼쪽: 강렬한 비주얼 텍스트 레이아웃 -->
+            <div class="w-full lg:w-1/2 p-8 md:p-16 flex flex-col justify-between bg-[#0022FF] text-white relative overflow-hidden">
+                <!-- 아웃라인 그래픽 배경 -->
+                <div class="absolute -right-20 -bottom-20 font-pop text-[12rem] font-extrabold text-[#0019C8] select-none pointer-events-none tracking-tighter">
+                    WAVE
+                </div>
+
+                <div class="pt-8 relative z-10">
+                    <span class="inline-block bg-[#FF5500] text-white text-xs font-black tracking-widest uppercase px-3 py-1 mb-8">
+                        [01] NEW WAVE IN JEJU
+                    </span>
+                    <h1 class="font-pop text-5xl md:text-7xl font-extrabold leading-none tracking-tighter uppercase mb-6">
+                        SIP THE<br>
+                        <span class="text-[#FF5500] bg-white px-2 my-1 inline-block">BLUE</span><br>
+                        HAMDEOK.
+                    </h1>
+                    <p class="font-bold text-lg md:text-xl text-blue-100 leading-snug max-w-md mt-8">
+                        함덕의 뻔한 감성은 끝났다.<br>
+                        가장 강렬한 원색으로 재해석한 제주 바다.
+                    </p>
+                </div>
+                
+                <div class="mt-12 lg:mt-0 relative z-10 flex items-center space-x-4">
+                    <p class="text-xs font-medium text-blue-200 leading-relaxed max-w-xs">
+                        매일 직접 로스팅하는 에스프레소 바와 오감을 자극하는 비주얼 디저트. C.H.에서 제주의 새로운 파도를 만나보세요.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 오른쪽: 과감한 벡터 팝아트 일러스트 (사진 대체!) -->
+            <div class="w-full lg:w-1/2 bg-[#FF5500] p-6 md:p-12 flex items-center justify-center relative">
+                <div class="w-full h-full relative group overflow-hidden border-4 border-black bg-[#FF5500] shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center p-8">
+                    
+                    <!-- 함덕 바다를 2D 원색 그래픽으로 형상화한 일러스트 코드 -->
+                    <svg viewBox="0 0 400 400" class="w-full h-auto max-w-md transform group-hover:scale-105 transition-transform duration-500" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 일러스트 배경 -->
+                        <rect width="400" height="400" fill="#0022FF" rx="10" stroke="#000000" stroke-width="6"/>
+                        <!-- 강렬한 네온 태양 -->
+                        <circle cx="200" cy="150" r="70" fill="#FF5500" stroke="#000000" stroke-width="6" />
+                        <!-- 볼드 파도 레이어 1 -->
+                        <path d="M 0 280 Q 100 220 200 280 T 400 280 L 400 400 L 0 400 Z" fill="#FFFFFF" stroke="#000000" stroke-width="6"/>
+                        <!-- 볼드 파도 레이어 2 -->
+                        <path d="M 0 320 Q 100 270 200 320 T 400 320 L 400 400 L 0 400 Z" fill="#FF5500" stroke="#000000" stroke-width="6"/>
+                        <!-- 그래픽 갈매기 아웃라인 -->
+                        <path d="M 80 80 Q 100 60 120 80 Q 140 60 160 80" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M 260 100 Q 275 85 290 100 Q 305 85 320 100" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                    
+                    <!-- 타이포 스티커 -->
+                    <div class="absolute top-6 left-6 bg-black text-white px-4 py-2 font-pop text-sm font-black tracking-widest uppercase -rotate-2">
+                        GRAPHIC JEJU WAVE
+                    </div>
+                    
+                    <div class="absolute bottom-6 right-6 bg-[#0022FF] text-white px-4 py-2 font-pop text-xs font-bold tracking-widest uppercase border-2 border-black">
+                        C.H. ART DIRECTION
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- MENU SECTION: 팝아트 일러스트 포스터 스타일 -->
+    <section id="menu" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 border-b-4 border-black pb-6">
+            <div>
+                <span class="text-xs font-black tracking-widest uppercase text-[#0022FF] block mb-2">[02] THE MENU</span>
+                <h2 class="text-3xl md:text-5xl font-black text-black tracking-tighter">SIGNATURE GRAPHIC</h2>
+            </div>
+            <p class="text-sm font-extrabold text-[#FF5500] font-pop tracking-wider mt-4 md:mt-0">WE DROP THE BEAT AND FLAVOR</p>
+        </div>
+
+        <!-- 3열 포스터 매거진 그리드 (실사 사진 완벽 배제) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            
+            <!-- 아이템 1 : 함덕 바다 라떼 원색 일러스트 -->
+            <div class="group border-4 border-black bg-white p-4 shadow-[8px_8px_0px_0px_rgba(0,34,255,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,34,255,1)] transition-all">
+                <div class="aspect-square w-full bg-[#0022FF] overflow-hidden relative mb-6 border-2 border-black flex items-center justify-center p-8">
+                    <!-- 컵 그래픽 일러스트 -->
+                    <svg viewBox="0 0 200 200" class="w-full h-full transform group-hover:rotate-6 transition-transform" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M60 40 L140 40 L125 170 L75 170 Z" fill="#FFFFFF" stroke="#000000" stroke-width="5" />
+                        <!-- 블루 음료 레이어 -->
+                        <path d="M65 90 Q 100 80 135 90 L127 165 L73 165 Z" fill="#FF5500" stroke="#000000" stroke-width="4" />
+                        <!-- 오렌지 빨대 -->
+                        <rect x="95" y="15" width="10" height="80" fill="#FFFFFF" stroke="#000000" stroke-width="4" transform="rotate(15 95 15)" />
+                    </svg>
+                    <span class="absolute top-2 right-2 bg-[#FF5500] text-white font-pop text-xs font-black px-2 py-1 border border-black">BLUE COFFEE</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-xl font-black text-black">함덕 바다 라떼</h3>
+                        <p class="text-xs font-bold text-stone-500 mt-1 uppercase font-pop">Blue Cream Latte</p>
+                    </div>
+                    <span class="font-pop text-lg font-black text-[#0022FF]">₩7.5</span>
+                </div>
+            </div>
+
+            <!-- 아이템 2 : 제주 말차 슈페너 원색 일러스트 -->
+            <div class="group border-4 border-black bg-white p-4 shadow-[8px_8px_0px_0px_rgba(255,85,0,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(255,85,0,1)] transition-all">
+                <div class="aspect-square w-full bg-[#FF5500] overflow-hidden relative mb-6 border-2 border-black flex items-center justify-center p-8">
+                    <!-- 말차 잔 그래픽 일러스트 -->
+                    <svg viewBox="0 0 200 200" class="w-full h-full transform group-hover:scale-11 transition-transform" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 60 L150 60 L140 150 L60 150 Z" fill="#0022FF" stroke="#000000" stroke-width="5" />
+                        <!-- 크림 레이어 -->
+                        <path d="M50 60 Q 100 80 150 60 L147 90 Q 100 100 53 90 Z" fill="#FFFFFF" stroke="#000000" stroke-width="4" />
+                        <!-- 흘러내리는 그래픽 스티커 라인 -->
+                        <circle cx="100" cy="110" r="12" fill="#FFFFFF" stroke="#000000" stroke-width="3" />
+                    </svg>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-xl font-black text-black">제주 말차 슈페너</h3>
+                        <p class="text-xs font-bold text-stone-500 mt-1 uppercase font-pop">Jeju Matcha Spanner</p>
+                    </div>
+                    <span class="font-pop text-lg font-black text-[#FF5500]">₩7.0</span>
+                </div>
+            </div>
+
+            <!-- 아이템 3 : 우도 땅콩 크로플 원색 일러스트 -->
+            <div class="group border-4 border-black bg-white p-4 shadow-[8px_8px_0px_0px_rgba(0,34,255,1)] hover:translate-x-1 hover:translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,34,255,1)] transition-all">
+                <div class="aspect-square w-full bg-[#FFFFFF] overflow-hidden relative mb-6 border-2 border-black flex items-center justify-center p-8">
+                    <!-- 크로플/디저트 그래픽 아웃라인 일러스트 -->
+                    <svg viewBox="0 0 200 200" class="w-full h-full transform group-hover:-rotate-6 transition-transform" xmlns="http://www.w3.org/2000/svg">
+                        <!-- 접시 -->
+                        <ellipse cx="100" cy="120" rx="70" ry="30" fill="#0022FF" stroke="#000000" stroke-width="5" />
+                        <!-- 기하학 크로플 덩어리 -->
+                        <rect x="65" y="75" width="70" height="50" rx="10" fill="#FF5500" stroke="#000000" stroke-width="5" transform="rotate(-15 100 100)" />
+                        <!-- 위에 올라간 볼드 아이스크림 -->
+                        <circle cx="105" cy="75" r="25" fill="#FFFFFF" stroke="#000000" stroke-width="5" />
+                    </svg>
+                    <span class="absolute top-2 right-2 bg-black text-white font-pop text-xs font-black px-2 py-1 border border-black">CRAZY SWEET</span>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-xl font-black text-black">우도 땅콩 크로플</h3>
+                        <p class="text-xs font-bold text-stone-500 mt-1 uppercase font-pop">Udo Peanut Croffle</p>
+                    </div>
+                    <span class="font-pop text-lg font-black text-[#0022FF]">₩9.0</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INFORMATION / FOOTER -->
+    <footer id="location" class="bg-black text-white py-24 border-t-8 border-[#FF5500]">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
+            
+            <div>
+                <span class="text-xs font-black tracking-widest text-[#FF5500] block mb-4">[03] INFO</span>
+                <h2 class="font-pop text-4xl font-extrabold tracking-tighter text-white mb-12">CAFE HAMDEOK</h2>
+                
+                <div class="space-y-4 text-base font-bold">
+                    <p class="flex items-center"><span class="text-[#0022FF] font-pop uppercase w-28 block">Address</span>제주특별자치도 제주시 조천읍 함덕리 [상세주소]</p>
+                    <p class="flex items-center"><span class="text-[#0022FF] font-pop uppercase w-28 block">Hours</span>10:00 - 20:00 (LO 19:30)</p>
+                    <p><span class="text-[#0022FF] font-pop uppercase w-28 inline-block">Tel</span>064.784.XXXX</p>
+                    <p><span class="text-[#0022FF] font-pop uppercase w-28 inline-block">Instagram</span><a href="#" class="text-[#FF5500] underline">@cafe_hamdeok_pop</a></p>
+                </div>
+            </div>
+
+            <!-- 볼드한 팝아트 그래픽 박스로 마무리 -->
+            <div class="bg-[#0022FF] border-4 border-white p-8 flex flex-col justify-between shadow-[-8px_8px_0px_0px_rgba(255,85,0,1)] relative overflow-hidden">
+                <div class="font-pop text-2xl font-black tracking-tight leading-none text-white relative z-10">
+                    SEE YOU IN THE BLUE WAVE!
+                </div>
+                <div class="mt-12 md:mt-0 flex flex-col sm:flex-row sm:items-end justify-between gap-4 relative z-10">
+                    <div class="text-xs text-blue-200 font-medium">
+                        <p>Owner. 홍길동</p>
+                        <p>License. 000-00-00000</p>
+                    </div>
+                    <p class="text-[10px] font-pop font-black tracking-widest text-black bg-white px-2 py-1 border border-black">
+                        &copy; 2026 C.H. ALL RIGHTS RESERVED.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
